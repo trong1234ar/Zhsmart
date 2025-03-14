@@ -58,7 +58,7 @@ if 'language' not in st.session_state:
     st.session_state.language = "English"
 
 # Language selector in sidebar
-st.sidebar.selectbox(
+st.selectbox(
     "Language/Ngôn ngữ:",
     ["English", "Tiếng Việt"],
     key="language"
