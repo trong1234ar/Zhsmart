@@ -65,19 +65,9 @@ streamlit run app.py
    - Track your progress with accuracy scores
    - Change vocabulary range anytime during practice
 
-## Contributing 🤝
-
-Contributions are welcome! Feel free to submit issues and enhancement requests.
 
 ## Contact 📧
 
 - GitHub: [@trong1234ar](https://github.com/trong1234ar)
 - Email: trongntdseb@gmail.com
 
-## License 📝
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-Made with ❤️ for Chinese language learners
