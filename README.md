@@ -1,4 +1,6 @@
-# ZhSmart - Your Smart Chinese Learning Companion 🀄
+# ZhSmart - Your Smart Chinese Learning Companion 
+
+## How to use --> [ZhSmart](https://zhsmart.streamlit.app/)
 
 ## Are you struggling with learning Chinese vocabulary?
 
