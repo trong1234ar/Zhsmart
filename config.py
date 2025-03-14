@@ -1,7 +1,7 @@
 # UI translations
 TRANSLATIONS = {
     "English": {
-        "app_title": "Vocabulary Learning App - 词汇学习应用程序",
+        "app_title": "词汇学习应用程序 - Vocabulary Learning App",
         "select_range": "Select vocabulary range:",
         "all_vocab": "All Vocabularys",
         "by_levels": "By Levels",
@@ -39,7 +39,7 @@ TRANSLATIONS = {
         "not_enough_words": "This lecture does not have enough words. Please choose another lecture!"
     },
     "Tiếng Việt": {
-        "app_title": "Ứng dụng học từ vựng - 词汇学习应用程序",
+        "app_title": "词汇学习应用程序 - Ứng dụng học từ vựng",
         "select_range": "Chọn phạm vi từ vựng:",
         "all_vocab": "Tất cả từ vựng",
         "by_levels": "Theo cấp độ",
