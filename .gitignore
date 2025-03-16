@@ -1,3 +1,5 @@
 .env
 .streamlit
 gs_credentials.json
+data.csv
+test.ipynb

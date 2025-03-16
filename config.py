@@ -23,6 +23,7 @@ TRANSLATIONS = {
         "your_pinyin": "Your Pinyin accuracy:",
         "correct_meaning": "Correct Meaning:",
         "your_meaning": "Your Meaning accuracy:",
+        "learn_more": "Learn more about '{}' on Hanzii",
         "outstanding": """
         🌟 Outstanding Performance! 🌟
         Your average accuracy: {score:.1f}%
@@ -36,7 +37,7 @@ TRANSLATIONS = {
         Your average accuracy: {score:.1f}%
         Don't give up! Regular practice will help you improve.""",
         "start_new": "Start New Session",
-        "not_enough_words": "This lecture does not have enough words. Please choose another lecture!"
+        "not_enough_words": "This lecture does not have enough words. Please choose another lecture!",
     },
     "Tiếng Việt": {
         "app_title": "词汇学习应用程序 - Ứng dụng học từ vựng",
@@ -61,6 +62,7 @@ TRANSLATIONS = {
         "your_pinyin": "Độ chính xác Pinyin của bạn:",
         "correct_meaning": "Nghĩa đúng:",
         "your_meaning": "Độ chính xác nghĩa của bạn:",
+        "learn_more": "Tìm hiểu thêm về '{}' trên Hanzii",
         "outstanding": """
         🌟 Thành tích xuất sắc! 🌟
         Độ chính xác trung bình: {score:.1f}%
@@ -74,6 +76,6 @@ TRANSLATIONS = {
         Độ chính xác trung bình: {score:.1f}%
         Đừng bỏ cuộc! Luyện tập thường xuyên sẽ giúp bạn tiến bộ.""",
         "start_new": "Bắt đầu phiên mới",
-        "not_enough_words": "Bài học này không có đủ từ vựng. Vui lòng chọn bài học khác!"
+        "not_enough_words": "Bài học này không có đủ từ vựng. Vui lòng chọn bài học khác!",
     }
 }
