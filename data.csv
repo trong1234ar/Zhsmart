@@ -1,0 +1,593 @@
+Word,Pinyin,Meaning,Level,Lecture
+一 斤,yijin,One pound,1,1
+昨天,zuotian,yesterday,1,1
+星期五,xingqi wu,Friday,1,1
+身体,shenti,Body,1,1
+一周,yi zhou,a week,1,1
+北京,beijing,Beijing,1,1
+馒头 ,mantou,Steamed bun ,1,1
+九,jiu,Nine,1,1
+这人,zher,This person,1,1
+名字,mingzi,name,1,1
+那,na,That,1,1
+学习,xuexi,study,1,1
+三,san,three,1,1
+老板,laoban,boss,1,1
+周,zhou,week,1,1
+文,wen,arts,1,1
+茶,cha,Tea,1,1
+请进,qingjin,Please come in,1,1
+怎么,zenme,how,1,1
+肉,rou,Meat,1,1
+二,er,two,1,1
+我,wo,I,1,1
+四,si,Four,1,1
+桃,tao,Peach,1,1
+日语,riyu,Japanese,1,1
+哥哥,gege,elder brother,1,1
+少,shao,few,1,1
+小姐姐,xiao jiejie,young lady,1,1
+角,jiao,horn,1,1
+要,yao,want,1,1
+朋友,pengyou,friend,1,1
+不用谢,bu yong xie,You're welcome,1,1
+喝,he,drink,1,1
+买,mai,purchase,1,1
+学,xue,study,1,1
+西班牙语,xibanyayu,spanish,1,1
+食堂,shitang,canteen,1,1
+五,wu,five,1,1
+想,xiang,think,1,2
+汉字,hanzi,Chinese character,1,2
+您,nin,you,1,2
+了,le,Got it,1,2
+一个星期,yi ge xingqi,a week,1,2
+哪儿,nar,where,1,2
+苹果,pingguo,apple,1,2
+天,tian,sky,1,2
+六,liu,six,1,2
+星期二,xingqier,Tuesday,1,2
+谢谢,xiexie,Thanks,1,2
+不,bu,No,1,2
+学期,xueqi,semester,1,2
+毛,mao,hair,1,2
+些,xie,some,1,2
+白,bai,white,1,2
+弟弟,didi,younger brother,1,2
+取,qu,Pick,1,2
+和,he,and,1,2
+别的,biede,Others,1,2
+奶奶,nainai,grandmother,1,2
+天安门,tiananmen,Tiananmen Square,1,2
+琬,wan,Wan,1,2
+法语,fayu,French,1,2
+鸡,ji,chicken,1,2
+今天,jintian,today,1,2
+家里,jiali,at home,1,2
+蛋,dan,Egg,1,2
+牛,niu,ox,1,2
+星期天,xingqitian,Sunday,1,2
+信,xin,letter,1,2
+香蕉,xiangjiao,banana,1,2
+一共,yigong,total,1,2
+男,,male,1,2
+元,yuan,Yuan,1,2
+阿拉伯语,alabuoyu,Arabic,1,2
+什么,shenme,What,1,2
+给,gei,Give,1,2
+马·,ma,horse·,1,2
+爱,ai,like,1,2
+美女,meinu,Beauty,1,2
+医生,yisheng,doctor,1,2
+韩国语,hanguoyu,Korean,1,2
+那,na,That,1,2
+草莓,caomei,strawberry,1,2
+家,jia,Home,1,2
+星期日,xingqiri,Sunday,1,2
+卖,mai,Sell,1,2
+银行,yinhang,bank,1,2
+贵,gui,expensive,1,2
+包子,baozi,steamed stuffed bun,1,2
+早上,zaoshang,Morning,1,2
+便宜,pianyi,Cheap,1,2
+口,kou,mouth,1,2
+你,ni,you,1,2
+请,qing,please,1,2
+请问,qingwen,Excuse me,1,2
+那儿,nar,there,1,2
+是,shi,yes,1,2
+忙,mang,busy,1,2
+谁,shei,who,1,2
+吗,ma,?,1,2
+梨,li,pear,1,2
+不客气,bukeqi,You're welcome,1,2
+多,duo,many,1,2
+小弟弟,xiao didi,little brother,1,2
+星期六,xingqiliu,Saturday,1,2
+星期三,xingqisan,Wednesday,1,2
+难,,Disaster,1,2
+回,hui,return,1,2
+她,ta,she,1,2
+杂志,zachi,Magazine,1,3
+老爸,laoba,Dad,1,3
+贵姓,guixing,your surname,1,3
+进,jin,Enter,1,3
+再见,zaijian,goodbye,1,3
+老妈,laoma,Mom,1,3
+找,zhao,try to find,1,3
+德语,deyu,German,1,3
+爷爷,yeye,grandfather,1,3
+吃,chi,eat,1,3
+晚上,wanshang,night,1,3
+饺子,jiaozi,dumpling,1,3
+对不起,duibuqi,sorry,1,3
+老大,laoda,boss,1,3
+妹妹,meimei,younger sister,1,3
+俄语,eyu,Russian,1,3
+汉语,hanyu,Chinese,1,3
+啤酒,pijiu,beer,1,3
+饭,fan,meal,1,3
+猪,zhu,pig,1,3
+钱,qian,money,1,3
+见,jian,See,1,4
+他,ta,he,1,4
+老师,laoshi,teacher,1,4
+块,kuai,piece,1,4
+米饭,mifan,rice,1,4
+月,yue,moon,1,4
+去,qu,go,1,4
+大哥,dage,Big brother,1,4
+哪儿,nar,where,1,4
+星期一,xingqiyi,Monday,1,4
+下午,xiawu,afternoon,1,4
+十,shi,ten,1,4
+橘子,juzi,tangerine,1,4
+明天,mingtian,tomorrow,1,4
+妈妈,mama,Mother,1,4
+两,liang,two,1,4
+吧,ba,Bar,1,4
+学生,xuesheng,student,1,4
+周一,zhouyi,on Monday,1,4
+葡萄,putao,Grape,1,4
+面条,miantiao,Noodle,1,4
+鸟,niao,bird,1,4
+周日,zhouri,Sunday,1,4
+对,dui,right,1,4
+学校,xuexiao,School,1,4
+那儿,nar,there,1,4
+中午,zhongwu,noon,1,4
+平安,pingan,Safety,1,4
+邮局,youju,post office,1,4
+没有,meiyou,No,1,4
+上午,shangwu,morning,1,4
+国,guo,country,1,4
+没关系,meiguanxi,It doesn't matter,1,4
+多少,duoshao,How many,1,4
+小弟,xiaodi,little brother,1,4
+坐,zuo,sit,1,4
+英语,yingyu,English,1,4
+星期四,xingqisi,Thursday,1,4
+叫,jiao,Call,1,4
+好,hao,good,1,4
+汤,tang,Soup,1,4
+狗,gou,dog,1,4
+西瓜,xigua,watermelon,1,4
+姐姐,jiejie,elder sister,1,4
+发音,fayin,pronounce,1,4
+小妹妹,xiaomeimei,little sister,1,4
+大,da,big,1,4
+星期,xingqi,Week,1,4
+猫,mao,cat,1,4
+很,hen,very,1,4
+来,lai,Come,1,4
+太,tai,too,1,4
+八,ba,eight,1,5
+小哥哥,xiaogege,little brother,1,5
+工作,gongzuo,Work,1,5
+水果,shuiguo,fruit,1,5
+这,zhe,this,1,5
+分,fen,minute,1,5
+书,shu,Book,1,6
+公斤,gongjin,Kilogram,1,6
+还,hai,still,1,6
+爸爸,baba,dad,1,6
+越南,yuenan,Vietnam,1,6
+认识,renshi,know,1,6
+筷子,kuaizi,Chopsticks,1,6
+们,men,them,1,6
+一,yi,one,1,6
+什么,shenme,What,1,7
+七,qi,seven,1,7
+鸭,ya,duck,1,7
+寄,ji,send,1,7
+图书馆,tushuguan,library,1,7
+换,huan,Change,1,7
+先生,xiansheng,gentlemen,1,7
+营业员,yingyeyuan,salesperson,1,7
+人民币,renminbi,RMB,1,7
+千,qian,thousand,1,7
+百,bai,Hundred,1,7
+万,wan,Ten thousand,1,7
+日元,riyuan,JPY,1,8
+等,deng,wait,1,8
+一会儿,yihuir,a while,1,8
+数,shu,count,1,8
+办公,bangong,office,1,8
+室,shi,room,1,8
+教室,jiaoshi,classroom,1,8
+里,li,inside,1,8
+桌子,zhuozi,table,1,9
+椅子,yizi,Chair,1,9
+电脑,diannao,computer,1,9
+电话,dianhua,Telephone,1,9
+职员,zhiyuan,staff,1,9
+钱包,qianbao,wallet,1,9
+在,zai,exist,1,9
+住,zhu,live,1,9
+呢,ne,"<use at the end of question, negative question>",1,10
+楼,lou,building,1,10
+层,ceng,layer,1,10
+房间,fangjian,Room,1,10
+房子,fangzi,house,1,10
+号,hao,Number,1,10
+留学生,liuxuesheng,International students,1,10
+知道,zhidao,Know,1,10
+打,da,beat,1,10
+手机,shouji,cell phone,1,10
+零,ling,zero,1,10
+同学,tongxue,classmate,1,10
+秘书,mishu,secretary,1,10
+介绍,jieshao,introduce,1,10
+一下儿,yixiar,for a while,1,10
+位,wei,pplace,1,10
+教授,jiaoshou,professor,1,11
+校长,xiaozhang,headmaster,1,11
+欢迎,huanying,welcome,1,11
+也,ye,also,1,11
+都,dou,All,1,11
+俩,lia,both,1,11
+没什么,meishenme,nothing,1,11
+大夫,dafu,doctor,1,11
+护士,hushi,Nurse,1,11
+经理,jingli,manager,1,11
+律师,lvshi,lawyer,1,11
+记者,jizhe,reporter,1,11
+语言,yvyan,language,1,11
+大学,daxue,University,1,11
+小学,xiaoxue,primary school,1,11
+中学,zhongxue,middle school,1,11
+怎么样,zenmeyang,How about it,1,11
+觉得,juede,feel,1,11
+语法,yufa,grammar,1,11
+词汇,cihui,vocabulary,1,11
+语音,yuyin,voice,1,11
+听,ting,listen,1,11
+读,du,read,1,11
+生词,shengci,new words,1,11
+比较,bijiao,Compare,1,11
+累,lei,tired,1,11
+错,cuo,wrong,1,12
+容易,rongyi,easy,1,12
+但是,haishi,but,1,12
+新,xin,new,1,12
+旧,jiu,old(things),1,12
+老,lao,old(people),1,12
+同屋,tongwu,roommate,1,12
+班,ban,class,1,12
+黑,hei,black,1,12
+红,hong,red,1,12
+黄,huang,yellow,1,12
+蓝,lan,blue,1,13
+灰,hui,ash,1,13
+箱子,xiangji,box,1,13
+重,zhong,Heavy,1,13
+轻,qing,light,1,13
+药,yao,medicine,1,13
+叶,ye,leaf,1,13
+日用品,riyongpin,Daily necessities,1,13
+衣服,yifu,clothing,1,13
+件,jian,<measure for clothes>,1,13
+穿,chuan,wear,1,13
+雨伞,yusan,Umbrella,1,13
+把,ba,<measure for objects with handle>,1,13
+香水,xiangshui,perfume,1,13
+瓶,ping,bottle,1,13
+词典,cidian,dictionary,1,13
+本子,benzi,book,1,13
+光盘,guangpan,CD,1,13
+张,zhang,<measure for flat objects>,1,13
+笔,bi,Pen,1,13
+支,zhi,<measure for pen>,1,13
+经理,jingli,manager,1,14
+好久,haojiu,a long time,1,14
+最近,zuijin,recent,1,14
+最,zui,most,1,14
+刚,gang,Just,1,14
+开,kai,open,1,14
+有点儿,youdianr,kind of,1,14
+咖啡,kafei,coffee,1,14
+奶,nai,Milk,1,14
+杯,bei,<measure for cups>,1,14
+杯子,beizi,cup,1,14
+车,che,car,1,14
+辆,liang,vehicle,1,14
+自行车,zixingche,bike,1,14
+汽车,qiche,car,1,14
+摩托车,motuoche,motorcycle,1,14
+出租车,chuzuche,taxi,1,14
+颜色,yanse,color,1,14
+骑,qi,ride,1,14
+开车,kaiche,drive,1,14
+饮料,yinliao,drinks,1,14
+果汁,guozhi,juice,1,14
+照相机,zhaoxiangji,camera,1,15
+全,quan,Complete,1,15
+全部,quanbu,all,1,15
+照片,zhaopian,photo,1,15
+喜欢,xihuan,like,1,15
+看,kan,look,1,15
+电视,dianshi,television,1,15
+只,zhi,Only,1,15
+做,zuo,Do,1,15
+当,dang,work as,1,15
+医生,yisheng,doctor,1,15
+医院,yiyuan,Hospital,1,15
+演员,yanyuan,actor,1,15
+司机,siji,driver,1,15
+服务员,fuwuyuan,waiter,1,15
+公司,gongsi,company,1,15
+商店,shangdian,shop,1,15
+外贸,waimao,foreign trade,1,15
+大概,dagai,perhaps,1,15
+外国,waiguo,foreign,1,15
+岁,suo,age,1,15
+冷,leng,cold,1,16
+热,re,hot,1,16
+高兴,gaoxing,Happy,1,16
+漂亮,piaoliang,pretty,1,16
+能,neng,able,1,16
+睡觉,shuijiao,sleep,1,16
+飞机,feiji,airplane,1,16
+东西,dongsi,thing,1,16
+现在,xianzai,Now,1,16
+跟,gen,with,1,16
+一起,yiqi,Together,1,16
+咱们,zanmen,we,1,16
+走,zou,Walk,1,16
+常,chang,often,1,16
+时候,shihou,when,1,16
+有时候,youshihou,sometimes,1,16
+借,jie,borrow,1,16
+问路,wenlu,Ask for directions,2,1
+怎么走,zenmezou,how to go,2,1
+地方,difang,place,2,1
+超市,chaoshi,supermarket,2,1
+公园,gongyuan,garden,2,1
+远,yuan,Far,2,1
+前,qian,forward,2,1
+后,hou,back,2,1
+上,shang,superior,2,1
+下,xia,Down,2,1
+左,zuo,Left,2,1
+右,you,right,2,1
+里,li,inside,2,1
+外,wai,outside,2,1
+东,dong,East,2,1
+西,si,West,2,1
+南,yue,South,2,1
+北,bei,north,2,1
+边,bian,side,2,1
+面,mian,noodle,2,1
+前面,qianmian,Front,2,1
+后面,houmian,later,2,1
+上面,shangmian,above,2,1
+里面,limian,in,2,1
+外面,waimian,Outside,2,1
+中间,zhongjian,middle,2,1
+旁边,pangbian,beside,2,1
+对面,duimian,opposite,2,1
+从,cong,from,2,1
+到,dao,arrive,2,1
+往,wang,to go (in a direction),2,1
+然后,ranhou,after that,2,2
+拐,guai,to turn,2,2
+回答,huida,answer,2,2
+问题,wenti,question,2,2
+饭店,fandian,Restaurant,2,2
+酒店,jiudian,hotel,2,2
+四川,sichuan,Sichuan,2,2
+就,jiu,immediately,2,2
+离,li,Leave,2,2
+米,mi,meter,2,2
+公里,gongli,kilometer,2,2
+生日,shengri,Birthday,2,3
+出生,chusheng,born,2,3
+举行,juxing,hold,2,3
+晚会,wanhui,soiree,2,3
+蛋糕,dangao,cake,2,3
+聊天儿,liaotianr,Chat,2,3
+前年,qiannian,the year before last,2,3
+去年,qunian,last year,2,3
+今年,jinnian,This year,2,3
+明年,mingnian,next year,2,3
+后年,hounian,the year after tomorrow,2,3
+真,zhen,really,2,3
+快乐,kuaile,happy,2,4
+祝,zhu,wish,2,4
+健康,jiankang,healthy,2,4
+顺利,shunli,smoothly,2,4
+幸福,xingfu,happiness,2,4
+美满,meiman,perfectly satisfactory,2,4
+为什么,weishenme,Why,2,4
+因为,yinwei,because,2,4
+所以,suoyi,so,2,4
+事,shi,thing,2,4
+空儿,kongr,empty,2,4
+想,xiang,think,2,4
+让,rang,let,2,4
+派,pai,group,2,4
+电影,dianying,Movie,2,4
+见面,jianmian,Meet,2,4
+唱,chang,Sing,2,4
+歌,ge,Song,2,4
+爱好,aihao,Hobby,2,5
+非常,feichang,Very,2,5
+电影院,dianyingyuan,Cinema,2,5
+公交车,gongjiaoche,the bus,2,5
+地铁,ditie,subway,2,5
+快,kuai,quick,2,5
+慢,man,slow,2,5
+又,you,again,2,5
+菜,cai,vegetable,2,5
+有名,youming,famous,2,5
+交通工具,jiaotonggongju,Transportation,2,5
+机场,jichang,Airport,2,5
+火车,huoche,train,2,5
+火车站,huochezhan,TRAIN STATION,2,5
+高铁,gaotie,high speed rail,2,5
+轻轨,qinggui,Light Rail,2,5
+外公,waigong,grandpa,2,6
+外婆,waipo,grandmother,2,6
+年龄,nianling,age,2,6
+多大 ,duoda,How big,2,6
+鱼,yu,fish,2,6
+条,tiao,strip,2,6
+只,zhi,Only,2,6
+可爱,keai,cute,2,6
+乖,guai,good,2,6
+音乐,yinyue,music,2,7
+古典,gudian,classical,2,7
+现代,xiandai,modern,2,7
+玩,wan,Play,2,7
+一边,yibian,aside,2,7
+首,shou,head,2,7
+迟到,chidao,be late,2,7
+行,xing,OK,2,7
+次,ci,Second-rate,2,7
+平时,pingshi,usually,2,7
+每天,meitian,every day,2,7
+休息,xiuxi,rest,2,7
+打,da,beat,2,7
+求,qiu,beg,2,7
+球,qiu,ball,2,7
+篮球,lanqiu,basketball,2,7
+网球,wangqiu,tennis,2,7
+排球,paiqiu,volleyball,2,7
+羽毛球,yumaoqiu,badminton,2,7
+足球,zuqiu,football,2,7
+踢,ti,Kick,2,7
+跳,tiao,Jump,2,7
+别人,bieren,other people,2,7
+周末,zhoumo,weekend,2,7
+跟,gen,and,2,7
+一起,yiqi,Together,2,7
+下个,xiage,Next,2,7
+上个,shangge,Previous,2,7
+现在,xianzai,Now,2,8
+点,dian,point,2,8
+点钟,dianzhong,o'clock,2,8
+半,ban,Half,2,8
+刻,ke,carve,2,8
+分,fen,point,2,8
+差,cha,Difference,2,8
+早晨,zaochen,morning,2,9
+夜间,yejian,at night,2,9
+床,chuang,bed,2,9
+起床,qichuang,get up,2,9
+单人床,danrenchuang,single bed,2,9
+双人床,shuangrenchuang,double bed,2,9
+刷,shua,brush,2,9
+牙,ya,tooth,2,9
+刷牙,shuaya,brush teeth,2,9
+牙刷,yashua,toothbrush,2,9
+洗,xi,wash,2,9
+洗脸,xilian,wash face,2,9
+上课,shangke,Attend class,2,9
+上班,shangban,work,2,9
+下课,xiake,After class,2,9
+下班,xiaban,get off work,2,9
+锻炼,duanlian,exercise,2,9
+小时,xiaoshi,Hour,2,9
+洗澡,xizao,bath,2,9
+报,bao,newspaper,2,9
+上网,shangwang,Internet access,2,9
+复习,fuxi,review,2,9
+门口,menkou,doorway,2,9
+时候,shihou,when,2,9
+什么时候,shenmeshihou,when,2,9
+或者,huozhe,or,2,9
+操场,caochang,playground,2,9
+酒吧,jiuba,bar,2,9
+以后,yihou,after,2,10
+以前,yiqian,before,2,10
+宿舍,sushe,dormitory,2,10
+练习,lianxi,practise,2,10
+预习,yuxi,Preview,2,10
+才,cai,talent,2,10
+可以,keyi,Can,2,11
+会,hui,meeting,2,11
+游泳,youyong,swim,2,11
+能,neng,able,2,11
+可能,keneng,possible,2,11
+愿意,yuanyi,willing,2,11
+可是,keshi,But,2,11
+接,jie,catch,2,11
+说话,shuohua,say,2,11
+谈,tan,talk,2,11
+没电,meidian,No power,2,12
+充电,chongdian,Charge,2,12
+表,biao,surface,2,12
+停,ting,stop,2,12
+电池,dianchi,Battery,2,12
+该,gai,Should,2,12
+遍,bian,all over,2,12
+趟,tang,trip,2,12
+自己,ziji,Own,2,12
+服装店,fuzhuangdian,clothing store,2,13
+服装,fuzhuang,clothing,2,13
+上衣,shangyi,Jacket,2,13
+衬衫,chenshan,shirt,2,13
+毛衣,maoyi,sweater,2,13
+大衣,dayi,coat,2,13
+外套,waitao,coat,2,13
+T恤,Txu,t-shirt,2,13
+穿,chuan,wear,2,13
+脱,tuo,take off,2,13
+试,shi,try,2,13
+裤子,kuzi,Pants,2,13
+裙子,qunzi,skirt,2,13
+连衣裙,lianyiqun,dress,2,13
+鞋,xie,shoe,2,13
+双,shuang,pair,2,13
+长,chang,long,2,13
+短,duan,short,2,13
+深,shen,deep,2,13
+浅,qian,shallow,2,13
+大小,daxiao,size,2,13
+正合适,zhengheshi,just right,2,13
+棕,zong,Brown,2,13
+橙,cheng,orange,2,13
+绿,lv,green,2,13
+打折,dazhe,Discount,2,13
+商场,商场,shopping mall,2,13
+适合,shihe,Suitable,2,13
+喂,wei,Hello,2,14
+接,jie,catch,2,14
+帮,bang,help,2,14
+帮助,bangzhu,help,2,14
+帮忙,bangmang,help,2,14
+准备,zhunbei,Prepare,2,14
+考试,kaoshi,take an exam,2,14
+水平,shuiping,level,2,14
+级,ji,class,2,14
+参加,canjia,join,2,14
+比赛,bisai,Contest,2,14
+旅行,luxing,travel,2,15
+团,tuan,group,2,15
+意思,yisi,mean,2,15
+不好意思,buhaoyisi,Excuse me,2,15
+油,you,Oil,2,15
+同意,tongyi,agree,2,15
+完全,wanquan,completely,2,15
+打算,dasuan,Intend,2,15
+已经,yijing,already,2,16

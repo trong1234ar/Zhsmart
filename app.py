@@ -104,14 +104,30 @@ if not st.session_state.game_active:
     
     if selection_mode == txt["by_levels"]:
         available_levels = sorted(df['Level'].unique())
-        selected_level = st.selectbox(txt["choose_level"], available_levels)
-        filtered_df = df[df['Level'] == selected_level]
+        col1, col2 = st.columns(2)
+        with col1:
+            start_level = st.selectbox(f"{txt['choose_level']} (From)", available_levels)
+        with col2:
+            end_level = st.selectbox(f"{txt['choose_level']} (To)", 
+                                   [lvl for lvl in available_levels if lvl >= start_level],
+                                   index=len([lvl for lvl in available_levels if lvl >= start_level])-1)
+        filtered_df = df[df['Level'].between(start_level, end_level)]
+    
     elif selection_mode == txt["by_lectures"]:
         available_levels = sorted(df['Level'].unique())
         selected_level = st.selectbox(txt["choose_level"], available_levels)
         available_lectures = sorted(df[df['Level'] == selected_level]['Lecture'].unique())
-        selected_lecture = st.selectbox(txt["choose_lecture"], available_lectures)
-        filtered_df = df[(df['Level'] == selected_level) & (df['Lecture'] == selected_lecture)]
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            start_lecture = st.selectbox(f"{txt['choose_lecture']} (From)", available_lectures)
+        with col2:
+            end_lecture = st.selectbox(f"{txt['choose_lecture']} (To)", 
+                                     [lec for lec in available_lectures if lec >= start_lecture],
+                                     index=len([lec for lec in available_lectures if lec >= start_lecture])-1)
+        
+        filtered_df = df[(df['Level'] == selected_level) & 
+                        (df['Lecture'].between(start_lecture, end_lecture))]
     
     # Display number of available words
     st.write(f"{txt['num_words']} {len(filtered_df)}")
@@ -158,10 +174,14 @@ if st.session_state.game_active and st.session_state.current_index < len(st.sess
             meaning_similarity = string_similarity(str(user_meaning), str(current_word['Meaning']))
             
             # Display correct answers and similarity scores
-            st.markdown(f"**{txt['correct_pinyin']}** {current_word['Pinyin']}")
+            st.markdown(f"✅**{txt['correct_pinyin']}** {current_word['Pinyin']}")
             st.write(f"{txt['your_pinyin']} {pinyin_similarity:.1f}%")
-            st.markdown(f"**{txt['correct_meaning']}** {current_word['Meaning']}")
+            st.markdown(f"✅**{txt['correct_meaning']}** {current_word['Meaning']}")
             st.write(f"{txt['your_meaning']} {meaning_similarity:.1f}%")
+            
+            # Add reference link with language-specific parameter
+            lang_code = "en" if st.session_state.language == "English" else "vi"
+            st.markdown(f"[🔍 {txt['learn_more'].format(current_word['Word'])}](https://hanzii.net/search/word/{current_word['Word']}?hl={lang_code})")
             
             # Update score (average of pinyin and meaning accuracy)
             question_score = (pinyin_similarity + meaning_similarity) / 2
