@@ -1,212 +1,125 @@
 import streamlit as st
-import pandas as pd
-import random
-from difflib import SequenceMatcher
-from collect_data import load_data
-from config import *
-import re
-
-
-
+from page_cha_laoshi import show_cha_laoshi_page
+from page_vocabulary_review import show_vocabulary_review_page
+from config import TRANSLATIONS
+import os
+from dotenv import load_dotenv
 # Page configuration
 st.set_page_config(
     page_title="ZhSmart",
     page_icon="logo.png",
-    layout="centered",
-    initial_sidebar_state="auto",
+    layout="wide",
+    initial_sidebar_state="collapsed",
     menu_items={
         'Get Help': 'https://github.com/trong1234ar/zhsmart',
-        'Report a bug': "mailto:trongntdseb@gmail.com",
+        'Report a bug': "https://forms.gle/UmH1FR6CsRw4w3t4A",
         'About': """
         # ZhSmart - Chinese Learning App
         
-        A vocabulary learning application designed for Chinese language students.
-        Features:
-        - Practice vocabulary by level or lecture
-        - Instant feedback on pronunciation and meaning
-        - Progress tracking and scoring
-        - Flexible learning modes
+        A comprehensive vocabulary learning application designed for Chinese language students.
+        
+        ## Features:
+        - **Practice Mode**: Interactive vocabulary practice by level or lecture
+        - **Vocabulary Review**: Browse, search, and review vocabulary with statistics
+        - **Instant feedback** on pronunciation and meaning
+        - **Progress tracking** and scoring
+        - **Flexible learning modes**
+        - **Multi-language support** (English/Vietnamese)
         """
     }
 )
 
-def remove_tone_marks(pinyin):
-    """Remove tone marks from pinyin."""
-    tone_marks = {
-        'ā': 'a', 'á': 'a', 'ǎ': 'a', 'à': 'a',
-        'ē': 'e', 'é': 'e', 'ě': 'e', 'è': 'e',
-        'ī': 'i', 'í': 'i', 'ǐ': 'i', 'ì': 'i',
-        'ō': 'o', 'ó': 'o', 'ǒ': 'o', 'ò': 'o',
-        'ū': 'u', 'ú': 'u', 'ǔ': 'u', 'ù': 'u',
-        'ǖ': 'ü', 'ǘ': 'ü', 'ǚ': 'ü', 'ǜ': 'ü', 'ü': 'u'
-    }
-    return ''.join(tone_marks.get(c, c) for c in pinyin.lower())
+# Initialize authentication state
+if 'authenticated' not in st.session_state:
+    st.session_state.authenticated = False
 
-def string_similarity(a, b, is_pinyin=False):
-    """Calculate string similarity with special handling for pinyin."""
-    if is_pinyin:
-        # Remove tone marks and spaces for pinyin comparison
-        a = remove_tone_marks(''.join(a.lower().split()))
-        b = remove_tone_marks(''.join(b.lower().split()))
-        return 100 if a == b else 0  # Exact match required for pinyin without tones
-    else:
-        # Normal similarity check for meanings
-        return SequenceMatcher(None, a.lower(), b.lower()).ratio() * 100
+# Sidebar navigation
+st.sidebar.title("🌿 ZhSmart")
+st.sidebar.markdown("---")
 
-# Initialize language selection in session state
-if 'language' not in st.session_state:
-    st.session_state.language = "English"
+# Page selection
+page = st.sidebar.selectbox(
+    "Chọn một trang:",
+    ["📚 Luyện tập",  "🎮 Chế độ chưa mở"]
+)
 
 # Language selector in sidebar
-st.selectbox(
-    "Language/Ngôn ngữ:",
-    ["English", "Tiếng Việt"],
-    key="language"
+st.sidebar.markdown("---")
+# st.sidebar.subheader("")
+language = st.sidebar.selectbox(
+    "🌐",
+    ["Tiếng Việt", "English"],
+    key="sidebar_language"
 )
+
+# Update session state language
+if 'language' not in st.session_state:
+    st.session_state.language = language
+elif st.session_state.language != language:
+    st.session_state.language = language
 
 # Get current language translations
 txt = TRANSLATIONS[st.session_state.language]
 
-# Initialize session state variables
-if 'initialized' not in st.session_state:
-    st.session_state.initialized = False
-
-if not st.session_state.initialized:
-    st.session_state.current_words = None
-    st.session_state.score = 0
-    st.session_state.current_index = 0
-    st.session_state.total_questions = 10
-    st.session_state.game_active = False
-    st.session_state.initialized = True
-    st.session_state.filtered_df = None
-
-# Main app
-st.title(txt["app_title"])
-
-# Load data
-df = load_data()
-if st.session_state.language == "English":
-    df = df.drop(columns=['Meaning 2'])
-else:
-    df = df.drop(columns=['Meaning'])
-    df = df.rename(columns={'Meaning 2': 'Meaning'})
-# st.write(len(df))
-
-# Selection interface before starting game
-if not st.session_state.game_active:
-    # Selection mode
-    selection_mode = st.radio(
-        txt["select_range"],
-        [txt["all_vocab"], txt["by_levels"], txt["by_lectures"]]
-    )
+# Main content area
+# if page == "🏠 Trang chủ":
+#     st.title(txt["welcome_title"])
+#     st.markdown(txt["welcome_description"])
     
-    filtered_df = df.copy()
+#     st.markdown("---")
     
-    if selection_mode == txt["by_levels"]:
-        available_levels = sorted(df['Level'].unique())
-        col1, col2 = st.columns(2)
-        with col1:
-            start_level = st.selectbox(f"{txt['choose_level']} (From)", available_levels)
-        with col2:
-            end_level = st.selectbox(f"{txt['choose_level']} (To)", 
-                                   [lvl for lvl in available_levels if lvl >= start_level],
-                                   index=len([lvl for lvl in available_levels if lvl >= start_level])-1)
-        filtered_df = df[df['Level'].between(start_level, end_level)]
+#     st.markdown(txt["what_you_can_do"])
     
-    elif selection_mode == txt["by_lectures"]:
-        available_levels = sorted(df['Level'].unique())
-        selected_level = st.selectbox(txt["choose_level"], available_levels)
-        available_lectures = sorted(df[df['Level'] == selected_level]['Lecture'].unique())
+#     st.markdown(f"**{txt['vocabulary_review_title']}**")
+#     st.markdown(txt["vocabulary_review_desc"])
+    
+#     st.markdown(f"**{txt['practice_mode_title']}**")
+#     st.markdown(txt["practice_mode_desc"])
+    
+    
+#     st.markdown("---")
+    
+#     st.markdown(txt["ready_to_start"])
+
+if page == "📚 Luyện tập":
+    show_vocabulary_review_page()
+
+elif page == "🎮 Chế độ chưa mở":
+    # Password protection for Practice Mode
+    if not st.session_state.authenticated:
+        st.title(txt["practice_mode_protected"])
+        st.markdown(txt["password_protected_message"])
+        load_dotenv()
+        # Password input
+        try:
+            # Try local environment spreadsheet URL
+            pass_word = os.getenv('pass_word')
+            
+        except:
+            # If not found, use Streamlit secrets
+            pass_word = st.secrets['pass_word']
+        password = st.text_input(txt["password_label"], type="password")
         
-        col1, col2 = st.columns(2)
-        with col1:
-            start_lecture = st.selectbox(f"{txt['choose_lecture']} (From)", available_lectures)
-        with col2:
-            end_lecture = st.selectbox(f"{txt['choose_lecture']} (To)", 
-                                     [lec for lec in available_lectures if lec >= start_lecture],
-                                     index=len([lec for lec in available_lectures if lec >= start_lecture])-1)
-        
-        filtered_df = df[(df['Level'] == selected_level) & 
-                        (df['Lecture'].between(start_lecture, end_lecture))]
-    
-    # Display number of available words
-    st.write(f"{txt['num_words']} {len(filtered_df)}")
-    
-    try:
-        num_questions = st.slider(txt["num_questions"], 
-                                min_value=1, 
-                                max_value=len(filtered_df), 
-                                value=min(10, len(filtered_df)))
-    except:
-        st.warning(txt["not_enough_words"])
-    
-    if st.button(txt["start_practice"]):
-        # Store filtered dataframe in session state
-        st.session_state.filtered_df = filtered_df
-        # Randomly select words from filtered dataset
-        st.session_state.current_words = filtered_df.sample(n=num_questions).reset_index(drop=True)
-        st.session_state.current_index = 0
-        st.session_state.score = 0
-        st.session_state.total_questions = num_questions
-        st.session_state.game_active = True
-        # st.experimental_rerun()
-
-# Game interface
-if st.session_state.game_active and st.session_state.current_index < len(st.session_state.current_words):
-    current_word = st.session_state.current_words.iloc[st.session_state.current_index]
-    
-    # Display current progress - ensure total_questions is not zero
-    progress = (st.session_state.current_index + 1) / st.session_state.total_questions if st.session_state.total_questions > 0 else 0
-    st.progress(progress)
-    st.write(f"{txt['question']} {st.session_state.current_index + 1} {txt['of']} {st.session_state.total_questions}")
-    
-    # Display the Chinese character
-    st.header(f"{txt['chinese_char']} {current_word['Word']}")
-    
-    # Get user input
-    user_pinyin = st.text_input(txt["enter_pinyin"], key=f"pinyin_{st.session_state.current_index}")
-    user_meaning = st.text_input(txt["enter_meaning"], key=f"meaning_{st.session_state.current_index}")
-    check_col, next_col, change_col = st.columns(3)
-    with check_col:
-        if st.button(txt["check_answer"]):
-            # Calculate similarity scores
-            pinyin_similarity = string_similarity(str(user_pinyin), str(current_word['Pinyin']), is_pinyin=True)
-            meaning_similarity = string_similarity(str(user_meaning), str(current_word['Meaning']))
-            
-            # Display correct answers and similarity scores
-            st.markdown(f"✅**{txt['correct_pinyin']}** {current_word['Pinyin']}")
-            st.write(f"{txt['your_pinyin']} {pinyin_similarity:.1f}%")
-            st.markdown(f"✅**{txt['correct_meaning']}** {current_word['Meaning']}")
-            st.write(f"{txt['your_meaning']} {meaning_similarity:.1f}%")
-            
-            # Add reference link with language-specific parameter
-            lang_code = "en" if st.session_state.language == "English" else "vi"
-            st.markdown(f"[🔍 {txt['learn_more'].format(current_word['Word'])}](https://hanzii.net/search/word/{current_word['Word']}?hl={lang_code})")
-            
-            # Update score (average of pinyin and meaning accuracy)
-            question_score = (pinyin_similarity + meaning_similarity) / 2
-            st.session_state.score += question_score
-    with next_col:
-        if st.button(txt["next_question"]):
-            st.session_state.current_index += 1
-            if st.session_state.current_index < st.session_state.total_questions:
+        # Check password (you can change this to any password you want)
+        if st.button(txt["login_button"]):
+            if password.lower() == pass_word:  # Change this password
+                st.session_state.authenticated = True
+                st.success(txt["access_granted"])
                 st.rerun()
-    with change_col:
-        if st.button(txt["change_range"]):
-            st.session_state.game_active = False
-            st.rerun()
-
-# Show final score when game is complete
-if st.session_state.game_active and st.session_state.current_index >= st.session_state.total_questions:
-    final_score = st.session_state.score / st.session_state.total_questions
-    
-    if final_score >= 80:
-        st.success(txt["outstanding"].format(score=final_score))
-    elif final_score > 50:
-        st.warning(txt["good_progress"].format(score=final_score))
+            else:
+                st.error(txt["incorrect_password"])
+        
     else:
-        st.error(txt["keep_practicing"].format(score=final_score))
-    
-    if st.button(txt["start_new"]):
-        st.session_state.game_active = False
-        st.rerun()
+        # Show logout option
+        if st.sidebar.button(txt["logout_button"]):
+            st.session_state.authenticated = False
+            st.rerun()
+        
+        show_cha_laoshi_page()
+
+# Footer
+st.sidebar.markdown("---")
+st.sidebar.markdown(f"""
+### {txt['support']}
+- [{txt['report_bug']}](https://forms.gle/UmH1FR6CsRw4w3t4A)
+""")

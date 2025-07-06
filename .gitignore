@@ -3,3 +3,5 @@
 gs_credentials.json
 data.csv
 test.ipynb
+"__pycache__/" 
+hsk_vocab.xlsx
