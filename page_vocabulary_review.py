@@ -45,7 +45,7 @@ def string_similarity(a, b, is_pinyin=False):
 
 def show_practice_tab(df, txt):
     """Show practice tab with quiz functionality."""
-    st.header("🎯 Practice Mode")
+    st.header(f"🎯 {txt["paritce_mode_title"]}")
     left_col, right_col = st.columns([1, 1])
 
     # Initialize session state variables
@@ -239,7 +239,7 @@ def show_practice_tab(df, txt):
 
 def show_review_tab(df, txt):
     """Show review tab with search and statistics."""
-    st.header("📚 Review Mode")
+    st.header(f"📚 {txt['review_mode_title']}")
     
     # Search and filter section at the top
     st.subheader(txt["search_vocabulary"])

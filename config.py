@@ -40,6 +40,8 @@ TRANSLATIONS = {
         "made_with_love": "Made with ❤️ for Chinese learners",
         
         # Practice mode
+        "paritce_mode_title": "Practice Mode",
+        "review_mode_title": "Review Mode",
         "select_range": "Select vocabulary range:",
         "all_vocab": "All Vocabularys",
         "by_levels": "By Levels",
@@ -90,7 +92,7 @@ TRANSLATIONS = {
         "question_score": "Question Score:",
         
         # Vocabulary Review
-        "vocabulary_review_header": "📚 HSK Vocabulary Review",
+        "vocabulary_review_header": "📚 HSK Vocabulary Review and Practice",
         "vocabulary_review_welcome": "### Welcome to HSK Vocabulary Review! 📖",
         "vocabulary_review_description": "This page helps you review and explore Chinese vocabulary by HSK levels with examples.",
         "practice_tab": "Practice",
@@ -173,6 +175,8 @@ TRANSLATIONS = {
         "made_with_love": "Được tạo với ❤️ cho người học tiếng Trung",
         
         # Practice mode
+        "paritce_mode_title": "Chế Độ Luyện Tập",
+        "review_mode_title": "Chế Độ Ôn Tập",
         "select_range": "Chọn phạm vi từ vựng:",
         "all_vocab": "Tất cả từ vựng",
         "by_levels": "Theo cấp độ",
@@ -223,7 +227,7 @@ TRANSLATIONS = {
         "start_new_practice": "Bắt đầu luyện tập mới",
         
         # Vocabulary Review
-        "vocabulary_review_header": "📚 Ôn tập từ vựng HSK",
+        "vocabulary_review_header": "📚 Ôn luyện từ vựng HSK",
         "vocabulary_review_welcome": "### Chào mừng đến với Ôn tập từ vựng HSK! 📖",
         "vocabulary_review_description": "Trang này giúp bạn ôn tập và khám phá từ vựng tiếng Trung theo cấp độ HSK với các ví dụ.",
         "practice_tab": "Luyện tập",
