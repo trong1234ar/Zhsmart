@@ -123,15 +123,10 @@ TRANSLATIONS = {
         "example_header": "📝 Example",
         "learn_more_link": "🔍 Learn more",
         
-        # Authentication
-        "practice_mode_protected": "🔒 Locked function",
-        "password_protected_message": "This page is currently not available for everyone.",
-        "password_label": "Password:",
-        "login_button": "Login",
-        "access_granted": "✅ Access granted! You can now use Practice Mode.",
-        "incorrect_password": "❌ Incorrect password. Please try again.",
-        "password_hint": "💡 Hint: The password is related to the app name and year.",
-        "logout_button": "🔓 Logout from Practice Mode",
+        # HSK T103 Custom Mode
+        "hsk_t103_title": "🌿HSK T103",
+        "hsk_t103_opened": "✅ HSK T103 mode is now open!",
+        "hsk_t103_description": "This is a custom mode for the HSK T103 class session. Enjoy tailored content and exercises for your lesson!",
     },
     "Tiếng Việt": {
         # Main app
@@ -256,14 +251,9 @@ TRANSLATIONS = {
         "example_header": "📝 Ví dụ",
         "learn_more_link": "🔍 Tìm hiểu thêm",
         
-        # Authentication
-        "practice_mode_protected": "🔒 Chức năng chưa mở",
-        "password_protected_message": "Trang này hiện chưa mở với tất cả người dùng.",
-        "password_label": "Mật khẩu:",
-        "login_button": "Đăng nhập",
-        "access_granted": "✅ Truy cập được cấp! Bạn có thể sử dụng Chế độ luyện tập.",
-        "incorrect_password": "❌ Mật khẩu không đúng. Vui lòng thử lại.",
-        "password_hint": "💡 Gợi ý: Mật khẩu liên quan đến tên ứng dụng và năm.",
-        "logout_button": "🔓 Đăng xuất khỏi Practice Mode",
+        # HSK T103 Custom Mode
+        "hsk_t103_title": "🌿HSK T103",
+        "hsk_t103_opened": "✅ Chế độ HSK T103 đã mở!",
+        "hsk_t103_description": "Đây là chế độ tuỳ chỉnh riêng cho buổi học HSK T103. Hãy trải nghiệm nội dung và bài tập được thiết kế riêng cho lớp!",
     }
 }

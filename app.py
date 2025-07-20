@@ -38,9 +38,17 @@ st.sidebar.title("🌿 ZhSmart")
 st.sidebar.markdown("---")
 
 # Page selection
+
+# Get current language translations before using in sidebar
+
+# Sidebar navigation
+st.sidebar.title("🌿 ZhSmart")
+st.sidebar.markdown("---")
+
+# Page selection
 page = st.sidebar.selectbox(
     "Chọn một trang:",
-    ["📚 Luyện tập",  "🎮 Chế độ chưa mở"]
+    ["📚 Luyện tập", "🌿HSK T103"]
 )
 
 # Language selector in sidebar
@@ -58,8 +66,8 @@ if 'language' not in st.session_state:
 elif st.session_state.language != language:
     st.session_state.language = language
 
-# Get current language translations
 txt = TRANSLATIONS[st.session_state.language]
+
 
 # Main content area
 # if page == "🏠 Trang chủ":
@@ -80,42 +88,16 @@ txt = TRANSLATIONS[st.session_state.language]
 #     st.markdown("---")
     
 #     st.markdown(txt["ready_to_start"])
+if "show_new_func" not in st.session_state:
+    st.toast(txt["hsk_t103_opened"])
+    st.session_state["show_new_func"] = True
 
 if page == "📚 Luyện tập":
     show_vocabulary_review_page()
 
-elif page == "🎮 Chế độ chưa mở":
-    # Password protection for Practice Mode
-    if not st.session_state.authenticated:
-        st.title(txt["practice_mode_protected"])
-        st.markdown(txt["password_protected_message"])
-        load_dotenv()
-        # Password input
-        try:
-            # Try local environment spreadsheet URL
-            pass_word = os.getenv('pass_word')
-            
-        except:
-            # If not found, use Streamlit secrets
-            pass_word = st.secrets['pass_word']
-        password = st.text_input(txt["password_label"], type="password")
-        
-        # Check password (you can change this to any password you want)
-        if st.button(txt["login_button"]):
-            if password.lower() == pass_word:  # Change this password
-                st.session_state.authenticated = True
-                st.success(txt["access_granted"])
-                st.rerun()
-            else:
-                st.error(txt["incorrect_password"])
-        
-    else:
-        # Show logout option
-        if st.sidebar.button(txt["logout_button"]):
-            st.session_state.authenticated = False
-            st.rerun()
-        
-        show_cha_laoshi_page()
+elif page == txt["hsk_t103_title"]:
+    st.info(txt["hsk_t103_description"])
+    show_cha_laoshi_page()
 
 # Footer
 st.sidebar.markdown("---")
